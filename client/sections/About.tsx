@@ -1,9 +1,3 @@
-'use client';
+const About = () => <section>About section</section>
 
-const About = () => (
-  <section>
-    About section
-  </section>
-);
-
-export default About;
+export default About

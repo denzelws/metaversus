@@ -1,9 +1,3 @@
-'use client';
+const InsightCard = () => <div>Insight Card</div>
 
-const InsightCard = () => (
-  <div>
-    Insight Card
-  </div>
-);
-
-export default InsightCard;
+export default InsightCard
