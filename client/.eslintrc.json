@@ -43,6 +43,7 @@
     "react-hooks/exhaustive-deps": "warn",
     "semi": "off",
     "comma-dangle": "off",
+    "no-unused-vars": "off",
     "react/function-component-definition": [
       2,
       {

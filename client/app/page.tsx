@@ -1,4 +1,3 @@
-
 import { Footer, Navbar } from '../components/index.ts'
 import {
   About,
@@ -12,7 +11,7 @@ import {
 } from '../sections'
 
 const Page = () => (
-  <div className='bg-primary-black overflow-hidden'>
+  <div className="bg-primary-black overflow-hidden">
     <Navbar />
     <Hero />
     <About />
