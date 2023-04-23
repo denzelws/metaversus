@@ -5,11 +5,11 @@ import { fadeIn, textContainer, textVariant2 } from '../utils/motion'
 
 export type CustomTextProps = {
   title: string | JSX.Element
-  textStyles: string
+  textStyles?: string
 }
 
 export const TypingText = ({ title, textStyles }: CustomTextProps) => {
-  const letters = typeof title === 'string' ? Array.from(title) : [title]
+  const letters = Array.from(String(title))
   return (
     <motion.p
       variants={textContainer}
@@ -17,12 +17,17 @@ export const TypingText = ({ title, textStyles }: CustomTextProps) => {
     >
       {letters.map((letter, index) => (
         <motion.span variants={textVariant2} key={index}>
-          {typeof letter === 'string' && letter === '' ? '\u00A0' : letter}
+          {letter === '' ? '\u00A0' : letter}
         </motion.span>
       ))}
     </motion.p>
   )
 }
+
+TypingText.defaultProps = {
+  textStyles: ''
+}
+
 export const TitleText = ({ title, textStyles }: CustomTextProps) => (
   <motion.h2
     variants={textVariant2}
@@ -33,3 +38,7 @@ export const TitleText = ({ title, textStyles }: CustomTextProps) => (
     {title}
   </motion.h2>
 )
+
+TitleText.defaultProps = {
+  textStyles: ''
+}
