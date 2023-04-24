@@ -8,7 +8,7 @@ import {
   Insights,
   WhatsNew,
   World
-} from '../sections'
+} from '../sections/index.ts'
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
