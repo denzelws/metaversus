@@ -2,7 +2,9 @@
 # Metaversus 🪐
 
 O projeto consiste em uma landing page que permite aos usuários uma ótima experiência. 
-A plataforma é construída em NextJS e utiliza biblioteca Motion para utilização de animações. 
+A plataforma é construída em NextJS e utiliza biblioteca Motion para utilização de animações.
+
+Link para ver no site: https://metaversusmd.netlify.app/
 
 ## Qual tecnologia utilizada?
 
